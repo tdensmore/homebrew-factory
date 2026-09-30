@@ -10,16 +10,16 @@ class Factory < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tdensmore/factory/releases/download/v0.1.0/factory_0.1.0_darwin_amd64.tar.gz"
-      sha256 "fb73747390675e846e8f833e18a81e2218e8747b2c030079522adcb9618dee27"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_darwin_amd64.tar.gz"
+      sha256 "cdda4108be7f569afed6c82f38bda0a2bae5af9ab67078111b53bd3b11d20994"
 
       define_method(:install) do
         bin.install "factory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tdensmore/factory/releases/download/v0.1.0/factory_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3bcc0fea649a45c9baaf464fd07f749b359df20aec8933582b6311e8e28059bb"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_darwin_arm64.tar.gz"
+      sha256 "7e6497cf2daab8c5c67be4a78285548a1857e4a9026b7da90667fd509bfeae89"
 
       define_method(:install) do
         bin.install "factory"
@@ -29,15 +29,15 @@ class Factory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tdensmore/factory/releases/download/v0.1.0/factory_0.1.0_linux_amd64.tar.gz"
-      sha256 "be4f2a606c02e24636c24f5ef70cde37ba1132d4ebccf4b2c315986fd1a22e2d"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_linux_amd64.tar.gz"
+      sha256 "2b2c26c21a90f6d375fcf080301d24efc663f9184d17918c70d70cf7d82906e4"
       define_method(:install) do
         bin.install "factory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tdensmore/factory/releases/download/v0.1.0/factory_0.1.0_linux_arm64.tar.gz"
-      sha256 "92a41160b0e862260166f15b153c88fd61a5defcc86aad981fa83a97bfeb18ec"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_linux_arm64.tar.gz"
+      sha256 "fb263f0b069f4d972e701198694c63b0732842440610a1c16785b196d557e87c"
       define_method(:install) do
         bin.install "factory"
       end
