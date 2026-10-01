@@ -5,21 +5,21 @@
 class Factory < Formula
   desc "Run agent workflows as a DAG of steps, one sandbox per step"
   homepage "https://github.com/tdensmore/factory"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cdda4108be7f569afed6c82f38bda0a2bae5af9ab67078111b53bd3b11d20994"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.1/factory_0.1.1_darwin_amd64.tar.gz"
+      sha256 "e145feabce64222cc3f61a62121e335c3763c003eda02ed1c83dfe7ddfe4f3b8"
 
       define_method(:install) do
         bin.install "factory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7e6497cf2daab8c5c67be4a78285548a1857e4a9026b7da90667fd509bfeae89"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.1/factory_0.1.1_darwin_arm64.tar.gz"
+      sha256 "e40090bf9531755dc9cf6659ced7acd6cd4b2a2c38847aec6ffae9f1103ebceb"
 
       define_method(:install) do
         bin.install "factory"
@@ -29,15 +29,15 @@ class Factory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_linux_amd64.tar.gz"
-      sha256 "2b2c26c21a90f6d375fcf080301d24efc663f9184d17918c70d70cf7d82906e4"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.1/factory_0.1.1_linux_amd64.tar.gz"
+      sha256 "fc0d38da10ff4b21a5671d18263c7bf0ab20e74c6ee24371d60f6540c5bc86ad"
       define_method(:install) do
         bin.install "factory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.0/factory_0.1.0_linux_arm64.tar.gz"
-      sha256 "fb263f0b069f4d972e701198694c63b0732842440610a1c16785b196d557e87c"
+      url "https://github.com/tdensmore/homebrew-factory/releases/download/v0.1.1/factory_0.1.1_linux_arm64.tar.gz"
+      sha256 "374af1d6e2a2fce96ff91ed0bd44321bd127590d6c60a679c76cea0ead2da031"
       define_method(:install) do
         bin.install "factory"
       end
